@@ -1,65 +1,8 @@
 <html lang="en">
 <head>
-    <style>
-     img{
-        border-radius:50%}
-      .container{display: flex;
-                align-items: center;
-               justify-content: left;}  
-     .icons{
-        border: 2px ;
-        position: fixed;
-        top: 30%;
-        right: 0%;
-        width: 200px;
-        display: flex;
-        flex-direction: column;
-     }   
-     .icons a {
-        text-decoration: none;
-        text-transform: uppercase;
-        padding: 5px;
-        font-size: 22px;
-        border-radius: 50px 0px 0px 50px;
-        transform: translate(150px,0px);
-        transition: all 0.5s;
-        margin: 2px;
-        text-align: left;}
-        
-      .icons a:hover{transform: translate(-50px,0px);}
-        
-
-      
-      
-
-      .icons a i{margin-right: 10px;
-            background-color: white;
-            height: 40px;
-            width: 40px;
-            color: black;
-            text-align: center;
-            line-height: 40px;
-            border-radius: 50%;}
-      
-            
-            
- 
-       
-        .f{background-color:#422cd3 ;
-        color: white;}
-        .w{background-color: rgb(67, 173, 67);
-        color: white;}
-        .i{background-color: rgb(197, 105, 255);
-        color: white;}
-        h3 a {text-decoration:none ;}
-        .content{margin-left:80px ;
-      margin-right: 80px;}
-
-
-       
-        
-    </style>
+    
     <link rel="icon" type="image/x-icon" href="nima.png">
+    <link rel="stylesheet" href="style.css">
     
 
     <meta charset="UTF-8">
@@ -69,24 +12,23 @@
    
     <title>My Profile</title>
 </head>
-<body style="background-color:plum ; padding-left: 30px;">
+<body style="background-color:rgb(246,226,229); padding-left: 30px;">
+  
     <header>
-        <nav style="text-decoration:none;" >
-            <img src="nima.png"width ="150px" alt="">
+        <nav >
+            <img src="nima.png" alt="">
             <h3 style="text-align:center ;">
+              <div class="home">
                 <a href="index.html" > Home</a> &nbsp; &nbsp;
-               <a href="">Works </a> &nbsp; &nbsp;
+               <a href="work.html">Works </a> &nbsp; &nbsp;
                 <a href=""> Services </a>  &nbsp; &nbsp;
                <a href="">Pages </a> &nbsp; &nbsp;
-               <a href="index 2.html"> About  </a>&nbsp; &nbsp;
+               <a href="about.html"> About  </a>&nbsp; &nbsp;
                <a href="">Blog </a> 
               
-               <a href=""><button id="myBtn" style="position:fixed;right: 50px;color:white;background-color:purple ;font-size: large;padding: 10px;">Let's talk</button>
-
-               </a>
-
-               
-            </h3>
+               <a href="contact.html"><button type="button">Let's talk</button></a>
+             </div>
+             </h3>
          </nav>               
         
      </header>
@@ -97,16 +39,35 @@
      </div>
      <div class="container">
       <div class="image">
-     <img src="profile.jpeg" width="400px"  alt=""></div>
+     <img src="profile.jpeg" width="600px"  alt=""></div>
      <div class="text">
-     <p style="text-align:center ;font-size: 70px;position: right; font-family: cursive; ">Hi , there I'm Nimasha</p></div>
+     <p >Hi , there I'm Nimasha</p>
+    <ul>
+      <li> Web Designer</li> 
+      <li> Creative Thinker</li>
+      <li> A Music Lover</li>
+
+    </ul>
+    </div>
 
    </div>
+   <div class="success"><pre>
+   " I never dreamed about success. I worked for it"
+                                                                                 —Estée Lauder         </pre>
+   </div>
+   <footer>
+    <center><img src="nima.png" alt="">
+   <pre></pre> Author : Nimasha Buddhini<br>
+
+   <a href="#">nima@gmail.com</a>
+    </center>
+   </footer>
    
-       <pre style="font-size: 13px;">
-         IT faculty
-         University of Moratuwa
-       </pre>
+       
+   
+      
+
+
    
     
 </body>

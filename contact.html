@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Document</title>
+</head>
+<body>
+    <script type="module">
+       
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+        import {getDatabase, set,ref} from "https://www.gstatic.com/firebasejs/9.10.0/firebase-database.js";
+        
+       
+        const firebaseConfig = {
+          apiKey: "AIzaSyCxdv8m9GsYhwo0_fcaSVVcS49bWbqZ0wQ",
+          authDomain: "batch21-76227.firebaseapp.com",
+          databaseURL: "https://batch21-76227-default-rtdb.asia-southeast1.firebasedatabase.app",
+          projectId: "batch21-76227",
+          storageBucket: "batch21-76227.appspot.com",
+          messagingSenderId: "1069573534598",
+          appId: "1:1069573534598:web:8786b0d3f4330635057207",
+          measurementId: "G-6L44YF4R5W"
+        };
+      
+       
+        const app = initializeApp(firebaseConfig);
+        const db = getDatabase(app);
+
+        document.getElementById("userform").addEventListener("submit",function(e){
+            e.preventDefault();
+            
+            let name =  document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+           
+            set(ref(db, 'users/' + userId), {
+                  username: name,
+                  email: email,
+                  
+  });
+});
+
+
+       
+      </script>
+      <h1>Say Hello</h1>
+
+      <form method="post" id="userform"><br>
+       
+       <input type="text" id="name" required placeholder="Name"></input><br><br>
+       <br><input type="email" id="email" required placeholder="E-mail" ></input><br><br>
+       <input type="subject" id="sub" required placeholder="Subject"></input><br><br>
+       <br><textarea rows="6" name="message" id="msg" required placeholder="Message"></textarea><br><br><br>
+        <input type="submit" value="Submit">
+      </form>
+      
+</body>
+</html>
